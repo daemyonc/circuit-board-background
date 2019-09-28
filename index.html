@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Circuit Board Background</title>
 </head>
 <body>
-    
+    <div id="box" class="box"></div>
+
+    <script>
+        let body = document.documentElement;
+        let circuit = document.querySelector("#box");
+        console.log(circuit);
+
+        function position(e) {
+            circuit.style.setProperty('--xPos', e.clientX + "px");
+            circuit.style.setProperty('--yPos', e.clientY + "px");
+        }
+        body.addEventListener("mousemove", position, false);
+
+    </script>        
 </body>
 </html>
