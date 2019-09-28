@@ -8,12 +8,21 @@ body {
     background-color: #0D2233;
     display: grid;
     place-items: center;
+    padding: 40px;
 }
 #box {
     width: 700px;
     height: 700px;
-    background: no-repeat radial-gradient( circle at var(--xPos) var(--yPos), #5CD66B 0, rgba(255, 255, 255, .1) 80%);  
+    background: no-repeat radial-gradient( circle at var(--xPos) var(--yPos), #5CD66B 0, rgba(255, 255, 255, .1) 40%);  
     opacity: .5;  
     mask-image: url(PCB-01.svg);
     mask-repeat: no-repeat;
 }
+a, a:link, a:visited {
+    color: rgba(255,255,255,.2);
+    text-decoration: none;
+    font-size: 12pt;
+  }
+  a:hover {
+    color: #5CD66B;
+  }
