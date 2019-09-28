@@ -11,15 +11,13 @@
     <div id="box" class="box"></div>
     <a href="https://www.vecteezy.com/free-vector/circuit-board">Circuit Board Vectors by Vecteezy</a>
     <script>
-        let body = document.documentElement;
         let circuit = document.querySelector("#box");
-        console.log(circuit);
 
         function position(e) {
-            circuit.style.setProperty('--xPos', e.clientX + "px");
+            circuit.style.setProperty('--xPos', (e.layerX - 368) + "px");
             circuit.style.setProperty('--yPos', e.clientY + "px");
         }
-        body.addEventListener("mousemove", position, false);
+        circuit.addEventListener("mousemove", position, false);
 
     </script>        
 </body>
