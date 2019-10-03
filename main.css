@@ -11,10 +11,11 @@ body {
     padding: 40px;
 }
 #box {
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     background: no-repeat radial-gradient( circle at var(--xPos) var(--yPos), #5CD66B 0, rgba(255, 255, 255, .1) 40%);  
-    opacity: .5;  
+    opacity: .5;
+    -webkit-mask-image: url(PCB-01.svg);  
     mask-image: url(PCB-01.svg);
     mask-repeat: no-repeat;
 }
